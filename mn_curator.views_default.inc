@@ -167,7 +167,7 @@ function mn_curator_views_default_views() {
     'mission_description' => FALSE,
     'description' => '',
     'attach_text' => 'CSV',
-    'provide_file' => 1,
+    'provide_file' => 0,
     'filename' => 'mn-curator.csv',
     'parent_sort' => 0,
     'seperator' => ',',
@@ -176,7 +176,7 @@ function mn_curator_views_default_views() {
     'header' => 1,
   ));
   $handler->override_option('row_plugin', '');
-  $handler->override_option('path', 'mn-curator');
+  $handler->override_option('path', 'mn-curator.csv');
   $handler->override_option('menu', array(
     'type' => 'none',
     'title' => '',
